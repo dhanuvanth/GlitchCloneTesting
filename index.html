@@ -2,12 +2,41 @@
 <html>
 <head>
 <title>App</title>
-<meta charset = "utf-8">
+<meta charset="utf-8">
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+</style>
 </head>
 <body>
-<iframe src = "https://ar-dolphin.glitch.me" 
-style = "position: fixed; top: 0%; left: 0%; height: 100%; width: 100%;">
-Uh oh! Can't connect.
-</iframe>
+  <iframe src="https://ar-dolphin.glitch.me">
+    Uh oh! Can't connect.
+  </iframe>
 </body>
 </html>
